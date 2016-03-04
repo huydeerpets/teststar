@@ -4,7 +4,7 @@
 # authors: Angus McLeod
 
 register_asset 'stylesheets/ratings-desktop.scss', :desktop
-
+register_asset 'stylesheets/ratings-mobile.scss', :mobile
 after_initialize do
 
   module ::DiscourseRatings
