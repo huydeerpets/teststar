@@ -4,10 +4,11 @@ var renderUnboundRating = function(rating) {
     var value = i + 1,
         checked = value <= rating ? 'checked' : '',
         disabled = disabled ? 'disabled' : '',
-        star = '<input type="radio" value="' + value + '" ' + checked + ' disabled><i></i>';
+        
+		star = '<div id="jRate" style="height:50px;width: 200px;"></div>';
     stars = stars.concat(star)
   }
-  return '<span class="rating">' + stars + '</span>';
+  return '<span class="arating">' + stars + '</span>';
 };
 
 export default renderUnboundRating;

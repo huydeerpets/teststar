@@ -24,7 +24,18 @@ export default {
         }
       })
     });
-
+ $(document).ready(function(){
+        console.log('document on ready inside of api THIS DOES NOT WORK');
+      });
+	  $('#rating').jRate({
+            onChange: function(rating){
+             $('#ratingValue').text("rating " + rating);
+            }, 
+            startColor: 'blue',
+            endColor: 'blue',
+            width: 50,
+            height: 50
+        });
     TopicController.reopen({
       refreshAfterTopicEdit: false,
 
