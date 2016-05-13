@@ -24,8 +24,7 @@ export default {
         }
       })
     });
- 
-	  
+
     TopicController.reopen({
       refreshAfterTopicEdit: false,
 
